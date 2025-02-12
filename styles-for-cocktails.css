@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    /* color: rgba(169, 86, 26, 0.694); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 8rem;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: -3px;
+    background-image: url(images/dunedin.jpg);
+    background-size: 150%;
+    background-position: 10% 65%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 15s infinite alternate linear;
+}
+
+@keyframes animate-background {
+    from {background-position: 0% 65%;}
+    to {background-position: 100% 65%;}
+}
+
+#dunedin-railway {
+    object-fit: contain;
+    max-width: 100vw;
+    max-height: 600px;
+    object-position: left;
+}
+
+main {
+    display: flex; 
+    flex-direction:row;
+    font-family: Roboto Condensed;
+    color: #0a0600d6;
+    /* background-color: brown; */
+}            
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Roboto Condensed;
+    /* background-color: blue; */
+    width: 10%;
+    font-size: 1.5em;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    width: 90%;
+    /* background-color: blue; */
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    /* background-color: blueviolet; */
+}
+
+.equipment-section {
+    /* max-width: 10px;
+    max-height: 10px; */
+    display: flex;
+    flex-direction: row;   
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background-color: aqua; */
+    flex-wrap: nowrap;
+    /* width: 90vw; */
+    height: 100%;
+
+    margin: 10px;
+    /* container-type: size; */
+    /* justify-content: space-between; */
+    /* max-width: 100%; */ 
+} 
+
+#shaker-content, #muddler-content, #jiggers-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: 33% 100%;
+    /* flex-grow: 1; */
+    transition-duration: 2s;
+    /* flex-shrink: 1; */
+    flex-grow: 1;
+}
+
+.equipment-items:hover {
+        flex-basis: 100%;
+        background-color: #f08b0729;
+    }
+
+.equipment-section img, .equipment-section p {
+    height: 100%;
+    /* object-position: left; */
+    width: 50%;
+    /* max-width: 200%;
+    max-height: 200%; */
+    /* background-color: orange; */
+}
+
+
+/* .equipment-section img {
+    opacity: 0.85;
+    flex-grow: 1;
+    flex-shrink: 2;
+} */
+
+
+
+.whisky-cocktails {
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+    width: 100%;
+}
+
+.whisky-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10%;
+    width: 10%;
+    height: 200px;
+}
+
+.whisky-intro-image {
+    object-fit: cover;
+    width: 85vw;
+    position: relative;
+    opacity: 0.15;
+}
+
+.whisky-intro-text {
+    position: absolute;
+    margin-right: 5%;
+    /* color: white; */
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.whisky-sour, .old-fashioned {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.whisky-sour-image {
+    object-fit: contain;
+    height: 85%;
+    width: 50%;
+    position: relative;
+}
+
+.whisky-sour-text {
+    position: absolute;
+    top: 5%;
+    color: rgb(141, 101, 7);
+    height: 80%;
+    width: 30%;
+    font-size: 2.5em;
+}
+
+.whisky-sour-list {
+    position: absolute;
+    top: 20%;
+    color: rgb(141, 101, 7);
+    height: 60%;
+    width: 30%;
+    font-size: 1em;
+}
+
+.whisky-sour-image:hover {
+    opacity: 0.4;
+}
+
+
+
+.old-fashioned-image {
+    object-fit: contain;
+    height: 70%;
+    width: 50%;
+    position: relative;
+}
+
+.old-fashioned-text {
+    position: absolute;
+    top: 2%;
+    color: rgb(141, 101, 7);
+    height: 60%;
+    width: 30%;
+    font-size: 2.5em;
+}
+
+.old-fashioned-list {
+    position: absolute;
+    top: 20%;
+    color: rgb(141, 101, 7);
+    height: 40%;
+    width: 30%;
+    font-size: 1em;
+}
+
+.old-fashioned-image:hover {
+    opacity: 0.4;
+}
+/* .whisky-recipes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: blue;
+    width: 30%;
+} */
+
+
+.email {
+    display: flex;
+    flex-direction: column;
+    background-color: yellowgreen;
+}
+
+/* #muddler-content {
+    margin-top: 5%;
+}
+
+#jiggers-content {
+    margin-top: 10%;
+} */
+
+#shaker-content, #muddler-content, #jiggers-content {
+    display: flex;
+    flex-direction: row;
+    width: 32%;
+    /* border-style: outset;
+    border-width: 5px;
+    border-color: black; */
+    padding: 1%;
+    box-shadow: 10px 9px 58px -8px rgba(219, 135, 0, 0.228);
+    justify-content: flex-start;
+}
+
+
+
+.shaker-image, .muddler-image, .jiggers-image{
+    object-fit: contain;
+    margin: 1%;
+    /* background-color: orange; */
+}
+
+.shaker-words, .muddler-words, .jiggers-words {
+    object-fit: contain;
+    margin: 1%;
+    /* background-color: blueviolet; */
+}
