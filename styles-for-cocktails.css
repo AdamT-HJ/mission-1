@@ -50,8 +50,19 @@ aside {
     font-family: Roboto Condensed;
     /* background-color: blue; */
     width: 10%;
-    font-size: 1.5em;
+    font-size: 2em;
+    padding: 0.5em;
+    margin-right: 10px;
+}
 
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+
+a:hover {
+    color:#d98404d6
 }
 
 section {
@@ -60,6 +71,23 @@ section {
     /* flex-wrap: wrap; */
     width: 90%;
     /* background-color: blue; */
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    padding-top: 2em;
+}
+
+.two-em-text, .whisky-intro-text {
+    font-size: 1.5em;
 }
 
 .intro {
@@ -114,14 +142,6 @@ section {
 }
 
 
-/* .equipment-section img {
-    opacity: 0.85;
-    flex-grow: 1;
-    flex-shrink: 2;
-} */
-
-
-
 .whisky-cocktails {
     display: flex;
     flex-direction: column;
@@ -146,6 +166,7 @@ section {
 }
 
 .whisky-intro-text {
+    padding: 1em;
     position: absolute;
     margin-right: 5%;
     /* color: white; */
@@ -174,26 +195,25 @@ h3 {
 .whisky-sour-text {
     position: absolute;
     top: 5%;
-    color: rgb(141, 101, 7);
+    color: rgb(221, 131, 14);
     height: 80%;
-    width: 30%;
-    font-size: 2.5em;
+    width: 18%;
+    font-size: 3em;
 }
 
 .whisky-sour-list {
     position: absolute;
     top: 20%;
-    color: rgb(141, 101, 7);
+    color: rgb(221, 131, 14);
     height: 60%;
-    width: 30%;
-    font-size: 1em;
+    width: 18%;
+    font-size: 1.5em;
+    margin-left: 1.8em;
 }
 
 .whisky-sour-image:hover {
     opacity: 0.4;
 }
-
-
 
 .old-fashioned-image {
     object-fit: contain;
@@ -204,55 +224,49 @@ h3 {
 
 .old-fashioned-text {
     position: absolute;
-    top: 2%;
-    color: rgb(141, 101, 7);
-    height: 60%;
-    width: 30%;
-    font-size: 2.5em;
+    top: 1%;
+    color: rgb(221, 131, 14);
+    height: 40%;
+    width: 18%;
+    font-size: 3em;
 }
 
 .old-fashioned-list {
     position: absolute;
-    top: 20%;
-    color: rgb(141, 101, 7);
+    top: 10%;
+    color: rgb(221, 131, 14);
     height: 40%;
-    width: 30%;
-    font-size: 1em;
+    width: 18%;
+    font-size: 1.5em;
+    margin-left: 1.8em;
 }
 
 .old-fashioned-image:hover {
-    opacity: 0.4;
+    opacity: 0.2;
 }
-/* .whisky-recipes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: blue;
-    width: 30%;
-} */
 
 
 .email {
     display: flex;
     flex-direction: column;
-    background-color: yellowgreen;
+    background-color: rgba(221, 201, 139, 0.509);
 }
 
-/* #muddler-content {
-    margin-top: 5%;
+textarea {
+    width: 42.5%;
+    height: 10em;
+    object-position: 0%;
 }
 
-#jiggers-content {
-    margin-top: 10%;
-} */
+textarea::placeholder {
+    text-align: 0%;
+}
+
 
 #shaker-content, #muddler-content, #jiggers-content {
     display: flex;
     flex-direction: row;
     width: 32%;
-    /* border-style: outset;
-    border-width: 5px;
-    border-color: black; */
     padding: 1%;
     box-shadow: 10px 9px 58px -8px rgba(219, 135, 0, 0.228);
     justify-content: flex-start;
@@ -270,4 +284,23 @@ h3 {
     object-fit: contain;
     margin: 1%;
     /* background-color: blueviolet; */
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Roboto Condensed;
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.fb-social {
+    color: rgb(50, 142, 241);
+    padding-left: 10px;
+}
+
+.linkedin-social {
+    padding-left: 10px;
 }
